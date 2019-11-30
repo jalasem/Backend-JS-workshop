@@ -1,0 +1,56 @@
+{
+  "name": "backend_js_workshop",
+  "version": "0.1.0",
+  "description": "Express workshop starter",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublish": "npm run build",
+    "start": "node dist/",
+    "start:run": "yarn build && yarn start",
+    "dev": "nodemon --watch 'src/*' --exec 'yarn build && node ./dist/index'",
+    "lint": "./node_modules/.bin/eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jalasem/Backend-JS-workshop.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Schema",
+    "Validation",
+    "API",
+    "data",
+    "validation"
+  ],
+  "author": "Abdulsamii Ajala <kgasta@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jalasem/Backend-JS-workshop/issues"
+  },
+  "homepage": "https://github.com/jalasem/Backend-JS-workshop#readme",
+  "dependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "D": "^1.0.0",
+    "babel-eslint": "^10.0.3",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-proposal-private-methods": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-stage-3": "^7.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "eslint": "^6.6.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "nodemon": "^2.0.1",
+    "yarn": "^1.19.1"
+  }
+}
